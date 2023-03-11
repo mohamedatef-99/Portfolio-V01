@@ -1,0 +1,242 @@
+section{
+  margin-left: 10%;
+  margin-top: 7%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  width: 80%;
+}
+
+.head{
+  position: relative;
+  text-align: center;
+}
+.head h2{
+  font-size: 30px;
+  color: #CCD6F6;
+}
+.head a{
+  color: #60F6D3;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+  padding-top: 20px;
+}
+.head a::before{
+  content: "";
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  background-color: #60F6D3;
+  top: 40px;
+  left: 0;
+  transition: 0.5s ease-out;
+}
+.head a:hover::before{
+  display: block;
+  width: 100%;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects a{
+  text-decoration: none;
+}
+.projects .pro-1:hover{
+  transform: translateY(-10px);
+}
+.projects .pro-1:hover h2{
+  color: #60F6D3;
+}
+.pro-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 330px;
+  padding: 25px;
+  background-color: #112240;
+  transition: 0.3s ease;
+}
+.link a i{
+  color: #60F6D3;
+  font-size: 25px;
+}
+.link a .github{
+  color: #A8B2D1;
+  margin-right: 20px;
+}
+.link a .out-link{
+  color: #A8B2D1;
+}
+.link a .github:hover,
+.link a .out-link:hover{
+  color: #60F6D3;
+}
+
+.pro-head h2{
+  color: #CCD6F6;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.pro-head p{
+  color: #A8B2D1;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pro-head .span{
+  display: flex;
+  justify-content: space-between;
+  color: #A8B2D1;
+  padding-top: 25px;
+}
+
+
+/* Media */
+@media only screen and (max-width: 340px){
+  .head h2{
+    font-size: 20px;
+  }
+  .head a{
+    font-size: 13px;
+    padding-top: 15px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+  }
+  .pro-1{
+    height: 250px;
+  }
+  .link a i{
+    font-size: 18px;
+  }
+  .pro-head h2{
+    font-size: 14px;
+  }
+  .pro-head p{
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .projects .pro-1:hover{
+    transform: translateY(-4px);
+  }
+}
+/* CSS styles for smartphones */
+@media only screen and (min-width: 341px) and (max-width: 480px) {
+  .head h2{
+    font-size: 20px;
+  }
+  .head a{
+    font-size: 13px;
+    padding-top: 15px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+  }
+  .pro-1{
+    height: 290px;
+  }
+  .link a i{
+    font-size: 21px;
+  }
+  .pro-head h2{
+    font-size: 16px;
+  }
+  .pro-head p{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .projects .pro-1:hover{
+    transform: translateY(-5px);
+  }
+}
+
+/* CSS styles for tablets and mid-sized screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .pro-1{
+    height: 300px;
+  }
+  .link a i{
+    font-size: 21px;
+  }
+  .pro-head h2{
+    font-size: 16px;
+  }
+  .pro-head p{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .projects .pro-1:hover{
+    transform: translateY(-5px);
+  }
+}
+
+/* CSS styles for larger tablets and small laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 310px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  .pro-1{
+    height: 300px;
+  }
+  .link a i{
+    font-size: 23px;
+  }
+  .pro-head h2{
+    font-size: 18px;
+  }
+  .pro-head p{
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .projects .pro-1:hover{
+    transform: translateY(-5px);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+  .pro-1{
+    height: 300px;
+  }
+  .link a i{
+    font-size: 23px;
+  }
+  .pro-head h2{
+    font-size: 18px;
+  }
+  .pro-head p{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .projects .pro-1:hover{
+    transform: translateY(-5px);
+  }
+}

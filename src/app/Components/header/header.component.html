@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <div class="logo">
+      <a href="">Port<span>folio</span></a>
+    </div>
+    <ul class="list" [class.show-menu]="showList">
+      <li><a href="">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="resume" (click)="downloadResume()">Resume</a></li>
+    </ul>
+    <div class="burger-menu" (click)="showList = !showList">
+      <i class="fa-solid fa-bars bar" [style.display]="showList ? 'none' : 'block'"></i>
+      <i class="fa-solid fa-xmark close" [style.display]="showList ? 'block' : 'none'" (click)="$event.stopPropagation(); showList = false"></i>
+    </div>
+  </nav>
+</header>

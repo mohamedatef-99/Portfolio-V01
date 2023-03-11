@@ -1,0 +1,288 @@
+.contact{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: calc(100% - 40px);
+  position: fixed;
+  opacity: 0;
+  animation: link 0.5s ease-out 2.5s forwards;
+}
+.contact a{
+  margin-bottom: 20px ;
+  cursor: pointer;
+}
+.contact a i{
+  color: #949EBC;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact a i:hover{
+  color: #64FFDA;
+  transform: translateY(-4px);
+}
+
+.contact span{
+  border-left: 1px solid #949EBC;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.main{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 6%;
+  opacity: 0;
+  animation: slide 1s ease-out 1.5s forwards;
+}
+.main .name {
+  margin-left: 20px;
+}
+.main .name h4{
+  color: #64FFDA;
+}
+.main .name h1{
+  color:#CCD6F6;
+  font-size: 80px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.name .parag{
+  font-size: 60px;
+  color: #8892B0;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.main .name .type{
+  color: #8892B0;
+  font-size: 40px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  }
+.main .name span:first-child{
+  color: #64FFDA;
+}
+.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  width: 2px;
+  height: 35px;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+.main .bio {
+  width: 900px;
+  margin-top: 0;
+}
+.main .bio p{
+  color: #626D89;
+  font-size: 20px;
+  line-height: 1.5;
+}
+@keyframes blink {
+  0%,49%,100% {
+    background: #ccc;
+  }
+  50%,99% {
+    background: transparent;
+  }
+}
+
+@keyframes slide{
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.mail{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 40px);
+  position: fixed;
+  z-index: 9999;
+  opacity: 0;
+  animation: link 0.5s ease-out 2.5s forwards;
+}
+.mail a{
+  text-decoration: none;
+  color: #949EBC;
+  transform: rotate(90deg);
+  margin-bottom: 120px;
+  transition: transform 0.2s, scale 0.2s;
+}
+.mail a:hover{
+  transform: rotate(90deg) scale(1.05);
+  color: #64FFDA;
+}
+.mail span{
+  border-left: 1px solid #949EBC;
+  height: 100px;
+  margin-top: 15px;
+}
+
+@keyframes link {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+/* Media */
+@media only screen and (max-width: 340px) {
+  .main .name h1{
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .name .parag{
+    font-size: 23px;
+    margin-top: 20px;
+  }
+  .main .name .type{
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .cursor {
+    height: 15px;
+    transform: translateY(10%);
+  }
+  .main .bio {
+    width: 250px;
+    margin-top: 0;
+  }
+  .main .bio p{
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .mail, .contact{
+    display: none;
+  }
+}
+/* CSS styles for smartphones */
+@media only screen and (min-width: 341px) and (max-width: 480px) {
+  .main .name h1{
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  .name .parag{
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .main .name .type{
+    font-size: 21px;
+    margin-top: 30px;
+  }
+  .cursor {
+    height: 20px;
+    transform: translateY(10%);
+  }
+  .main .bio {
+    width: 300px;
+    margin-top: 0;
+  }
+  .main .bio p{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .mail, .contact{
+    display: none;
+  }
+}
+
+/* CSS styles for tablets and mid-sized screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .main .name h1{
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .name .parag{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .main .name .type{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .cursor {
+    height: 20px;
+    transform: translateY(10%)
+  }
+  .main .bio {
+    width: 400px;
+    margin-top: 0;
+  }
+  .main .bio p{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .mail, .contact{
+    display: none;
+  }
+}
+
+/* CSS styles for larger tablets and small laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main .name h1{
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .name .parag{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .main .name .type{
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  .cursor {
+    height: 20px;
+    transform: translateY(10%)
+  }
+  .main .bio {
+    width: 600px;
+    margin-top: 0;
+  }
+  .main .bio p{
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .main .name h1{
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .name .parag{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .main .name .type{
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  .main .bio {
+    width: 650px;
+    margin-top: 0;
+  }
+  .main .bio p{
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}

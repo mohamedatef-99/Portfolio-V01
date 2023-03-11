@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.deca {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #64FFDA;
+  top: 50%;
+  left: 50%;
+  animation: rotateDeca 5s linear infinite;
+}
+
+
+.child {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FF95C9;
+  top: 50%;
+  left: 47.5%;
+  z-index: -1;
+}
+.decagon{
+  top: 50%;
+  left: 50%;
+  border-color: #64FFDA;
+}
+
+#dec_two {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+#dec_three{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#dec_four{
+  margin-left:40px; 
+  margin-top: 65px;
+}
+#dec_five{
+  margin-left:25px; 
+  margin-top: 85px;
+}
+#dec_six{
+  margin-top: 100px;
+}
+#dec_seven {
+  margin-left: -25px;
+  margin-top:100px;
+}
+#dec_eight{
+  margin-left: -50px;
+  margin-top:85px;
+}
+#dec_nine{
+  margin-left: -65px;
+  margin-top: 65px; 
+}
+#dec_ten{
+  margin-left: -65px; 
+  margin-top: 40px; 
+}
+#dec_eleven{
+  margin-left: -50px; 
+  margin-top: 15px; 
+}
+#dec_twelve{
+  margin-left: -25px;
+}
+
+  @keyframes rotateDeca {
+    8.33%{
+      transform: translate(25px, 15px);
+    }
+    16.66%{
+      transform: translate(40px, 40px);
+    }
+    24.99%{
+      transform: translate(40px, 65px);
+    }
+    33.33%{
+      transform: translate(25px, 85px);
+    }
+    41.66%{
+      transform: translate(0, 100px);
+    }
+    49.99%{
+      transform: translate(-25px, 100px);
+    }
+    58.33%{
+      transform: translate(-50px, 85px);
+    }
+    66.66%{
+      transform: translate(-65px,65px);
+    }
+    74.99%{
+      transform: translate(-65px,40px);
+    }
+    83.33%{
+      transform: translate(-50px,15px);
+    }
+    91.66%{
+      transform: translate(-25px,0);
+    }
+    100%{
+      transform: translate(0, 0);
+    }
+  }

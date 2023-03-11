@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio-Using-Angular';
+  isLoading: boolean = true
+  ngOnInit() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 4450);
+  }
 }
+

@@ -1,0 +1,129 @@
+section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 10%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.head, .details{
+  text-align: center;
+}
+.head span{
+  color: #60F6D3;
+  font-size: 15px;
+  padding-top: 30px;
+}
+.head h3{
+  color: #60F6D3;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.head h1{
+  color: #CCD6F6;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.details p{
+  padding-top: 20px;
+  color: #6E7A97;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.details a{
+  text-decoration: none;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #60F6D3;
+  color: #60F6D3;
+  padding: 20px;
+  border-radius: 10px;
+}
+.details a:hover{
+  background-color: rgba(96, 246, 211, 0.5);
+}
+
+.contact-link{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-align: center;
+}
+.contact-link a{
+  cursor: pointer;
+  margin-right: 30px;
+}
+.contact-link a i{
+  color: #949EBC;
+  font-size: 30px;
+}
+
+.contact-link a i:hover{
+  color: #64FFDA;
+}
+
+
+
+/* Media */
+/* CSS styles for smartphones */
+@media only screen and (max-width: 480px) {
+  .head span{
+    font-size: 10px;
+  }
+  .head h3{
+    font-size: 15px;
+  }
+  .head h1{
+    font-size: 30px;
+  }
+  .details a{
+    width: 100px;
+    height: 20px;
+    padding: 15px;
+  }
+  .contact-link{
+    display: block;
+  }
+  .contact-link a{
+    margin-right: 20px;
+  }
+  .contact-link a i{
+    font-size: 20px;
+  }
+}
+
+/* CSS styles for tablets and mid-sized screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .head span{
+    font-size: 15px;
+  }
+  .head h3{
+    font-size: 20px;
+  }
+  .head h1{
+    font-size: 45px;
+  }
+  .details a{
+    width: 100px;
+    height: 25px;
+    padding: 20px;
+  }
+  .contact-link{
+    display: block;
+  }
+}
+
+/* CSS styles for larger tablets and small laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
